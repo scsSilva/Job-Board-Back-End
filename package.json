@@ -7,6 +7,7 @@
     "dev": "nodemon",
     "generate": "prisma generate",
     "build": "tsc",
+    "postinstall": "npm run generate && npm run build",
     "start": "node dist/index.js"
   },
   "dependencies": {
